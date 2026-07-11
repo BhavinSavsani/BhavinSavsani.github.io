@@ -364,6 +364,19 @@ main,
   color: var(--accent);
 }
 
+.project-group {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+.project-group + .projects + .project-group {
+  margin-top: 2.5rem;
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -376,6 +389,15 @@ main,
   border: 1px solid var(--line);
   border-radius: 1rem;
   transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.project-company {
+  margin: 0 0 0.35rem !important;
+  color: var(--accent) !important;
+  font-size: 0.78rem !important;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .project:hover {
